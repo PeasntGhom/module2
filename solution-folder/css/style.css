@@ -1,0 +1,91 @@
+
+*{
+	box-sizing: border-box;
+	margin:  0;
+	padding: 0;
+	font-family: Helvetica;
+
+}
+
+h1{ /*title*/
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	margin-bottom: 100px;
+}
+
+.box { /* setting the menu box. With this, we dont have to set a @media for mobile screens... right? */
+	background-color: gray;
+	padding: 0px;
+	margin: 10px;
+	border: 1px solid black;
+	width: 90%;
+	height: 170px;
+	position: relative;
+}
+
+.sectiontitle{ /* setting the section tittle box */
+	background-color: greenyellow; /*This have a default colour for the "sushi" box*/
+	border: 1px solid black;
+	width: 40%;
+	height: 30px;
+	position: absolute;
+	top: 0px;
+	left: 60.1%;
+
+}
+
+.colorsection1{ /* color section title for "chicken"*/
+	background-color: #DFA818;
+}
+
+.colorsection2{ /* color section title for "beef"*/
+	background-color: #E3694E;
+}
+
+.name{		/*naming title of the section and placing in the center*/
+	text-align: center;
+	margin-top: 3px;
+	font-size: 120%;
+}
+
+#para{  /*simple paragraph with margin*/
+	position: relative;
+	top: 30px;
+	padding: 10px;
+	}
+
+.fila{ /*wraping all divs for a responsive web page */
+	width: 100%;
+}
+
+/*for desktop (992px and above)*/
+@media (min-width: 992px) {
+	.desktop {
+		float: left;
+		width: 31.3%;
+	}
+}
+
+/*for laptop (between 768px and 991px, inclusively)*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.laptop {
+		float: left;
+		width: 47%;
+	}
+}
+
+/*This is the same width but for second row, which means, the third menu box*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.laptop1 {
+		float: left;
+		width: 96.5%;
+	}
+
+} /*trying to contain the paragraph overflow*/
+@media (max-width: 323px){
+	.tryboxing{
+		height: auto;
+		overflow: scroll;
+	}
+}
